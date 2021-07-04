@@ -11,7 +11,7 @@ import java.util.ArrayList;
  */
 public class ConcreteSubject extends Observable {
 
-	/** ConcreteSubject est composÃ© d'une liste list */
+	/** ConcreteSubject est composé d'une liste list */
 	private ArrayList<String> list;
 
 	public ConcreteSubject() {
@@ -28,4 +28,5 @@ public class ConcreteSubject extends Observable {
 		return list.toString();
 	}
 
-}
+	}
+

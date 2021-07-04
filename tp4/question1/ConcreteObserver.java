@@ -20,12 +20,7 @@ public class ConcreteObserver implements Observer {
 		arguments = new Stack<Object>();
 	}
 
-	/**
-	 * implémentation de la seule méthode de l'interface java.util.Observer à
-	 * chaque exécution de cette méthode, celle-ci se contente d'empiler les
-	 * paramètres transmis observable et arg respectivement dans 2 piles senders
-	 * et arguments
-	 */
+	
 	public void update(Observable observable, Object arg) {
 		senders.push(observable);
 		arguments.push(arg);
@@ -39,4 +34,4 @@ public class ConcreteObserver implements Observer {
 		return arguments;
 	}
 	
-}
+	}
